@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LoanManagment</string>
+    <string name="i_am_a_textview">I am a TextView</string>
+</resources>
