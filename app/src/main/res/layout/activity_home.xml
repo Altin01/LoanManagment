@@ -1,10 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".HomeActivity"
+    android:background="@drawable/background_signup"
+
+    >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="?actionBarSize"
+          android:layout_marginBottom="30dp"
+          android:background="@color/colorPrimaryDark"
+          >
+
+          <ImageView
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_marginLeft="290dp"
+              android:src="@drawable/settings"
+
+              />
+
+      </RelativeLayout>
+       <RelativeLayout
+           android:id="@+id/newloan"
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:background="@drawable/newloan_bg"
+           android:elevation="10dp"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/New_Loan"
+               android:textSize="25sp"
+               android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
+               android:padding="40dp"
+               android:textColor="#fff"
+               />
+
+           <ImageView
+               android:layout_width="140dp"
+               android:layout_height="140dp"
+               android:src="@drawable/newloan"
+               android:layout_marginTop="8dp"
+               android:layout_alignParentRight="true"
+               />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/myloan"
+           android:layout_width="match_parent"
+           android:layout_height="150dp"
+           android:layout_margin="20dp"
+           android:background="@drawable/mybudget_bg"
+           android:elevation="10dp"
+           >
+           <ImageView
+               android:layout_width="140dp"
+               android:layout_height="140dp"
+               android:src="@drawable/mybudget"
+               android:layout_marginTop="8dp"
+               android:layout_alignParentRight="true" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="40dp"
+               android:text="@string/My_Budget"
+               android:textColor="#fff"
+               android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
+               android:textSize="25sp" />
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/calculateloan"
+           android:layout_width="match_parent"
+           android:layout_height="150dp"
+           android:layout_margin="20dp"
+           android:background="@drawable/calculate_bg"
+           android:elevation="10dp"
+           >
+           <ImageView
+               android:layout_width="140dp"
+               android:layout_height="140dp"
+               android:src="@drawable/calculate"
+               android:layout_marginTop="8dp"
+               android:layout_alignParentRight="true" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="40dp"
+               android:text="@string/calculate"
+               android:textColor="#fff"
+               android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
+               android:textSize="25sp"
+               />
+
+
+       </RelativeLayout>
+
+
+   </LinearLayout>
+
+
+
+   
+
+</ScrollView>
