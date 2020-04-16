@@ -14,12 +14,14 @@
     <LinearLayout
         android:id="@+id/sign"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="500dp"
         android:background="@drawable/singup_bg"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
 
         tools:layout_editor_absoluteX="54dp">
+
+
 
         <TextView
             android:layout_width="match_parent"
@@ -55,19 +57,25 @@
             android:inputType="textPassword"
 
             />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+
+            />
+
         <Button
-            android:id="@+id/btn_login"
+            android:id="@+id/Signup_Register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/btnlogin_bg"
-            android:paddingTop="10dp"
+            android:background="@drawable/btnsignup_bg"
             android:text="@string/SignUp"
             android:textAlignment="center"
             android:textColor="#fff"
-            android:textSize="22sp"
-            android:layout_marginTop="150dp"
-            />
+            android:textSize="22sp" />
 
 
     </LinearLayout>

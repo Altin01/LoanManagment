@@ -5,34 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
-    android:background="@drawable/background_signup"
+    android:background="@drawable/background_signup">
 
-    >
+
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:orientation="vertical"
-       >
-
+       android:orientation="vertical">
       <RelativeLayout
           android:layout_width="match_parent"
           android:layout_height="?actionBarSize"
           android:layout_marginBottom="30dp"
-          android:background="@color/colorPrimaryDark"
-          >
-
+          android:background="@color/colorPrimaryDark">
           <ImageView
               android:layout_width="50dp"
               android:layout_height="50dp"
               android:layout_marginLeft="290dp"
-              android:src="@drawable/settings"
-
-              />
-
+              android:src="@drawable/settings" />
       </RelativeLayout>
-       <RelativeLayout
+           <RelativeLayout
            android:id="@+id/newloan"
-
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:layout_margin="10dp"
@@ -46,16 +38,14 @@
                android:textSize="25sp"
                android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
                android:padding="40dp"
-               android:textColor="#fff"
-               />
+               android:textColor="#fff" />
 
            <ImageView
                android:layout_width="140dp"
                android:layout_height="140dp"
                android:src="@drawable/newloan"
                android:layout_marginTop="8dp"
-               android:layout_alignParentRight="true"
-               />
+               android:layout_alignParentRight="true" />
 
 
        </RelativeLayout>
@@ -92,8 +82,7 @@
            android:layout_height="150dp"
            android:layout_margin="20dp"
            android:background="@drawable/calculate_bg"
-           android:elevation="10dp"
-           >
+           android:elevation="10dp">
            <ImageView
                android:layout_width="140dp"
                android:layout_height="140dp"
@@ -108,17 +97,7 @@
                android:text="@string/calculate"
                android:textColor="#fff"
                android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
-               android:textSize="25sp"
-               />
-
-
+               android:textSize="25sp" />
        </RelativeLayout>
-
-
    </LinearLayout>
-
-
-
-   
-
 </ScrollView>
