@@ -8,96 +8,108 @@
     android:background="@drawable/background_signup">
 
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:orientation="vertical">
-      <RelativeLayout
-          android:layout_width="match_parent"
-          android:layout_height="?actionBarSize"
-          android:layout_marginBottom="30dp"
-          android:background="@color/colorPrimaryDark">
-          <ImageView
-              android:layout_width="50dp"
-              android:layout_height="50dp"
-              android:layout_marginLeft="290dp"
-              android:src="@drawable/settings" />
-      </RelativeLayout>
-           <RelativeLayout
-           android:id="@+id/newloan"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_margin="10dp"
-           android:background="@drawable/newloan_bg"
-           android:elevation="10dp"
-           >
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="@string/New_Loan"
-               android:textSize="25sp"
-               android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
-               android:padding="40dp"
-               android:textColor="#fff" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-           <ImageView
-               android:layout_width="140dp"
-               android:layout_height="140dp"
-               android:src="@drawable/newloan"
-               android:layout_marginTop="8dp"
-               android:layout_alignParentRight="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginBottom="30dp"
+            android:background="@color/colorPrimaryDark">
 
 
-       </RelativeLayout>
 
-       <RelativeLayout
-           android:id="@+id/myloan"
-           android:layout_width="match_parent"
-           android:layout_height="150dp"
-           android:layout_margin="20dp"
-           android:background="@drawable/mybudget_bg"
-           android:elevation="10dp"
-           >
-           <ImageView
-               android:layout_width="140dp"
-               android:layout_height="140dp"
-               android:src="@drawable/mybudget"
-               android:layout_marginTop="8dp"
-               android:layout_alignParentRight="true" />
+            <ImageView
+                android:id="@+id/buttonsettings"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="290dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/settings" />
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:padding="40dp"
-               android:text="@string/My_Budget"
-               android:textColor="#fff"
-               android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
-               android:textSize="25sp" />
+        </RelativeLayout>
 
-       </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/btn_realtivenewloan"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/newloan_bg"
+            android:elevation="10dp">
 
-       <RelativeLayout
-           android:id="@+id/calculateloan"
-           android:layout_width="match_parent"
-           android:layout_height="150dp"
-           android:layout_margin="20dp"
-           android:background="@drawable/calculate_bg"
-           android:elevation="10dp">
-           <ImageView
-               android:layout_width="140dp"
-               android:layout_height="140dp"
-               android:src="@drawable/calculate"
-               android:layout_marginTop="8dp"
-               android:layout_alignParentRight="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="40dp"
+                android:text="@string/New_Loan"
+                android:textColor="#fff"
+                android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
+                android:textSize="25sp" />
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:padding="40dp"
-               android:text="@string/calculate"
-               android:textColor="#fff"
-               android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
-               android:textSize="25sp" />
-       </RelativeLayout>
-   </LinearLayout>
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="125dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="10dp"
+
+                android:src="@drawable/newloan" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/myloan"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/mybudget_bg"
+            android:elevation="10dp">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/mybudget" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="40dp"
+                android:text="@string/My_Budget"
+                android:textColor="#fff"
+                android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/calculateloan"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/calculate_bg"
+            android:elevation="10dp">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/calculate" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="40dp"
+                android:text="@string/calculate"
+                android:textColor="#fff"
+                android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </LinearLayout>
 </ScrollView>
